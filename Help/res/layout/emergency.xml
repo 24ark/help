@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView03"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="582dp"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/emergencyImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="@android:dimen/app_icon_size"
+        android:maxWidth="@android:dimen/app_icon_size"
+        android:src="@drawable/e1" />
+
+    <EditText
+        android:id="@+id/policeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/policeButton"
+        android:layout_alignBottom="@+id/policeButton"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/fireNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/policeNumber"
+        android:layout_alignTop="@+id/fireButton"
+        android:ems="10"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/medicalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medicalButton"
+        android:layout_alignBottom="@+id/medicalButton"
+        android:layout_alignLeft="@+id/fireNumber"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/childlineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bloodbankButton"
+        android:layout_below="@+id/medicalButton"
+        android:layout_marginTop="15dp"
+        android:text="Child Helpline" />
+
+    <EditText
+        android:id="@+id/childlineNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/childlineButton"
+        android:layout_alignBottom="@+id/childlineButton"
+        android:layout_alignLeft="@+id/medicalNumber"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/bloodbankButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/childlineButton"
+        android:layout_marginTop="15dp"
+        android:text="Bloodbank" />
+
+    <EditText
+        android:id="@+id/bloodbankNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/childlineNumber"
+        android:layout_alignTop="@+id/bloodbankButton"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/womenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/bloodbankButton"
+        android:layout_below="@+id/bloodbankButton"
+        android:layout_marginTop="15dp"
+        android:text="Women Helpline" />
+
+    <EditText
+        android:id="@+id/womenNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bloodbankNumber"
+        android:layout_alignTop="@+id/womenButton"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/policeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/childlineButton"
+        android:layout_below="@+id/emergencyImageView1"
+        android:layout_marginTop="15dp"
+        android:text="Police" />
+
+    <Button
+        android:id="@+id/fireButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/policeButton"
+        android:layout_below="@+id/policeButton"
+        android:layout_marginTop="15dp"
+        android:text="Fire" />
+
+    <Button
+        android:id="@+id/medicalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/childlineButton"
+        android:layout_below="@+id/fireButton"
+        android:layout_marginTop="15dp"
+        android:text="Medical" />
+
+    <Button
+        android:id="@+id/animalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/womenButton"
+        android:layout_below="@+id/womenButton"
+        android:layout_marginTop="15dp"
+        android:text="Animal Aid" />
+
+    <EditText
+        android:id="@+id/animalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/womenNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/animalButton"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/accidentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/animalButton"
+        android:layout_below="@+id/animalButton"
+        android:layout_marginTop="15dp"
+        android:text="Accident Service" />
+
+    <EditText
+        android:id="@+id/accidentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/animalNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/accidentButton"
+        android:inputType="phone" />
+
+</RelativeLayout>
+</ScrollView>
